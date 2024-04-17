@@ -7,7 +7,7 @@
     private int codigo;
 
     
-
+//constructors
     public Produto(String nome, float preco, int quantidadeEstoque, String dataValidade, int codigo) {
         this.nome = nome;
         this.preco = preco;
@@ -21,7 +21,7 @@
     }
 
 
-    //getters setters
+//getters - setters
     public String getNome() {
         return nome;
     }
@@ -53,6 +53,10 @@
         this.codigo = codigo;
     }
 
-    
+    @Override
+    public String toString() {
+        return "\nNome" + nome + "\nPreco" + preco + "\nQuantidade no estoque" + quantidadeEstoque + "Data de validade" + 
+        dataValidade + "\nCodigo" + codigo; 
+    }
     
  }

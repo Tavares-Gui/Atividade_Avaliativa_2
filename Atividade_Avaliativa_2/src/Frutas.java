@@ -2,8 +2,7 @@ public class Frutas extends Produto {
     private String tipoFruta;
 
     
-    
-
+//constructors
     public Frutas(String nome, float preco, int quantidadeEstoque, String dataValidade, int codigo) {
         super(nome, preco, quantidadeEstoque, dataValidade, codigo);
     }
@@ -12,7 +11,7 @@ public class Frutas extends Produto {
     }
 
 
-    //getters setters
+//getters - setters
     public String getTipoFruta() {
         return tipoFruta;
     }
@@ -23,6 +22,6 @@ public class Frutas extends Produto {
 
     @Override
     public String toString() {
-        return super.toString();
+        return super.toString() + "\nTipo de fruta" + tipoFruta;
     }
 }
