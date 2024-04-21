@@ -16,7 +16,6 @@
         this.codigo = codigo;
     }
 
-    
     public Produto() {
     }
 

@@ -3,8 +3,9 @@ public class Frutas extends Produto {
 
     
 //constructors
-    public Frutas(String nome, float preco, int quantidadeEstoque, String dataValidade, int codigo) {
+    public Frutas(String nome, float preco, int quantidadeEstoque, String dataValidade, int codigo, String tipoFruta) {
         super(nome, preco, quantidadeEstoque, dataValidade, codigo);
+        this.tipoFruta = tipoFruta;
     }
 
     public Frutas() {
