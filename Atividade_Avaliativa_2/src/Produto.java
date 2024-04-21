@@ -54,8 +54,8 @@
 
     @Override
     public String toString() {
-        return "\nNome" + nome + "\nPreco" + preco + "\nQuantidade no estoque" + quantidadeEstoque + "Data de validade" + 
-        dataValidade + "\nCodigo" + codigo; 
+        return "\nNome" +  nome + "\nPreco" +  preco + "\nQuantidade no estoque" +  quantidadeEstoque + "Data de validade" + 
+         dataValidade + "\nCodigo" +  codigo; 
     }
     
  }
