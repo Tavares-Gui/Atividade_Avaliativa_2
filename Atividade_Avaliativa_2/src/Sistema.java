@@ -82,7 +82,7 @@ public class Sistema {
             nome = Console.lerString();
             System.out.println("\nDigite o preço do Produto");
             preco = Console.lerFloat();
-            System.out.println("\n Digite a quantidade no estoque:");
+            System.out.println("\nDigite a quantidade no estoque:");
             quantidadeEstoque = Console.lerInt();
             System.out.println("\nDigite a data de validade:");
             dataValidade = Console.lerString();
@@ -104,7 +104,7 @@ public class Sistema {
 
             if (!laticinios.isEmpty())
             {
-                System.out.println("Lista de laticínios:");
+                System.out.println("\nLista de laticínios:");
                 for (Produto laticinio : laticinios) 
                 {
                     System.out.println(laticinio);
@@ -112,7 +112,7 @@ public class Sistema {
             }
             else
             {
-                System.out.println("Não há laticínios cadastrados.");
+                System.out.println("\nNão há laticínios cadastrados.");
             }
 
             break;
@@ -123,7 +123,7 @@ public class Sistema {
 
             if (!utensilios.isEmpty())
             {
-                System.out.println("Lista de utensílios:");
+                System.out.println("\nLista de utensílios:");
                 for (Produto utensilio  : utensilios) 
                 {
                     System.out.println(utensilio);
@@ -131,7 +131,7 @@ public class Sistema {
             }
             else
             {
-                System.out.println("Não há utensílios cadastrados.");
+                System.out.println("\nNão há utensílios cadastrados.");
             }
 
             break;
@@ -142,7 +142,7 @@ public class Sistema {
 
             if (!frutas.isEmpty())
             {
-                System.out.println("Lista de frutas:");
+                System.out.println("\nLista de frutas:");
                 for (Produto fruta : frutas) 
                 {
                     System.out.println(fruta);
@@ -150,7 +150,7 @@ public class Sistema {
             }
             else
             {
-                System.out.println("Não há frutas cadastradas.");
+                System.out.println("\nNão há frutas cadastradas.");
             }
 
             break;
@@ -161,7 +161,7 @@ public class Sistema {
 
             if (!todosProdutos.isEmpty())
             {
-                System.out.println("Lista de todos os produtos:");
+                System.out.println("\nLista de todos os produtos:");
                 for (Produto produto : todosProdutos) 
                 {
                     System.out.println(produto);
@@ -169,24 +169,24 @@ public class Sistema {
             }
             else
             {
-                System.out.println("Não há produtos cadastrados.");
+                System.out.println("\nNão há produtos cadastrados.");
             }
 
             break;
 
             case 8:
             //buscar produto
-            System.out.println("Digite o código do produto:");
+            System.out.println("\nDigite o código do produto:");
             nome = Console.lerString();
 
             Produto produto = CadastroProdutos.buscar(nome);
             if (produto != null) 
             {
-                System.out.println("Produto encontrado:");
+                System.out.println("\nProduto encontrado:");
                 System.out.println(produto);
             } else 
             {
-                System.out.println("Produto com código " + nome + " não encontrado.");
+                System.out.println("\nProduto com código " + nome + " não encontrado.");
             }
 
             break;
@@ -208,7 +208,7 @@ public class Sistema {
             break;
 
             default:
-            System.out.println("Opção Inválida. Favor tentar novamente...");
+            System.out.println("\nOpção Inválida. Favor tentar novamente...");
                 break;
         }
     }
